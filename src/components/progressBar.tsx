@@ -1,10 +1,25 @@
-export const ProgressBar = () => {
+import { Slider } from "antd"
+import type { SliderSingleProps } from "antd"
+
+export const ProgressBar = ({value }:{value: number}) => {
+    const styles: SliderSingleProps['styles'] = {
+        track: { backgroundImage: 'linear-gradient(180deg, #FFB76B,#FF7B00)' },
+        handle: {borderColor: '#FFB76B', boxShadow: '0 2px 8px #276221' },
+
+    }
+
+
     return (
         <div className="mb-10">
             <h1 className="text-xs font-bold">
                 Creation et innovation
             </h1>
-            <div className="w-xl h-5 bg-orange-400 mt-2"></div>
+            <Slider 
+                value={value} 
+                disabled
+                tooltip={{open:false}}
+                styles={styles}
+            />
         </div>
     )
 }

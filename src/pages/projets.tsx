@@ -1,46 +1,69 @@
-export const Projets = () => {
-    const informations = [
-        {
-            image: "", 
-            title: "Alex's design",
-            description: `Une ONG (Organisation Non Gouvernementale) est une organisation qui
-                        travaille pour aider les populations et améliorer les conditions de vie 
-                        dans la société. Elle intervient souvent dans des domaines comme la santé`
-        },
-        {
-            image: "", 
-            title: "NG's design",
-            description: `Une ONG (Organisation Non Gouvernementale) est une organisation qui
-                        travaille pour aider les populations et améliorer les conditions de vie 
-                        dans la société. Elle intervient souvent dans des domaines comme la santé`
-        },
-        {
-            image: "", 
-            title: "Gloire's design",
-            description: `Une ONG (Organisation Non Gouvernementale) est une organisation qui
-                        travaille pour aider les populations et améliorer les conditions de vie 
-                        dans la société. Elle intervient souvent dans des domaines comme la santé`
-        }
-    ]
+import {motion} from "framer-motion";
+import { ProjectCard } from "../components/projectCard";
 
+const container = {
+    hidden: {opacity: 0},
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2,
+            delayChildren: 0.4
+        }
+    }
+}
+
+const titre = {
+    hidden: {y: -100, opacity: 0},
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {duration: 0.6}
+    }
+}
+
+const slideBottom = {
+    hidden: {y: 150,opacity: 0},
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {duration: 0.6}
+    }
+}
+
+
+export const Projets = () => {
 
     return (
-        <div className="p-8">
-            <h1 className="text-3xl font-bold">
+        <motion.div 
+            className="min-h-screen p-10"
+            variants={container}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once:true}}
+        >
+            <motion.h1 
+                className="text-3xl font-bold" 
+                variants={titre}
+            >
                 <span className="text-orange-500">Nos </span>
                 <span className="text-green-400">derniers</span><br/>
                 <span className="text-green-400">projets & </span>
                 <span className="text-orange-500">Annonces</span>
-            </h1>
-            <div className="flex justify-between mt-15">
-                {informations.map((info) => <div className=" bg-green-600 w-[30%] h-105 rounded-3xl p-5">
-                    <div className="bg-orange-400 w-full h-1/2 rounded-3xl"></div>
-                    <h1 className="text-xl text-white font-semibold mt-3">{info.title}</h1>
-                    <p className="text-xs text-white mt-6">
-                        {info.description}
-                    </p>
-                </div>)}
+            </motion.h1>
+            <div className="min-h-screen max-w-6xl flex justify-center gap-10 mx-auto mt-[5%]">
+                <motion.div variants={slideBottom}>
+                    <ProjectCard titre="Alex Design"/>
+                </motion.div>
+
+               <motion.div variants={slideBottom}>
+                    <ProjectCard titre="Alex Design"/>
+                </motion.div>
+
+                <motion.div variants={slideBottom}>
+                    <ProjectCard titre="Alex Design"/>
+                </motion.div>
+                
             </div>
-        </div>
+        </motion.div>
     )
 }
