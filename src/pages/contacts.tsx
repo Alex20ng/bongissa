@@ -5,17 +5,17 @@ export const Contacts = () => {
             <h1 className="text-xl font-bold">LOGO</h1>
             <div className="flex mt-20 mb-15">
                 <label>News Lettter</label>
-                <div className="w-fit bg-green-400 px-5 py-2 rounded-3xl ml-auto font-semibold cursor-pointer">
+                <div className="w-fit bg-primary px-5 py-2 rounded-3xl ml-auto font-semibold cursor-pointer text-white">
                     Contactez Nous
                 </div>
             </div>
             <div className="w-6xl h-0.5 bg-gray-400 mr-auto ml-auto"></div>
             <div className="grid grid-cols-3 mt-15">
                 <div className="flex justify-start gap-4">
-                    <div className="w-12 aspect-square bg-amber-800 rounded-full mt-auto"></div>
-                    <div className="w-12 aspect-square bg-amber-800 rounded-full mt-auto"></div>
-                    <div className="w-12 aspect-square bg-amber-800 rounded-full mt-auto"></div>
-                    <div className="w-12 aspect-square bg-amber-800 rounded-full mt-auto"></div>
+                    <div className="w-12 aspect-square bg-secondary rounded-full mt-auto"></div>
+                    <div className="w-12 aspect-square bg-secondary rounded-full mt-auto"></div>
+                    <div className="w-12 aspect-square bg-secondary rounded-full mt-auto"></div>
+                    <div className="w-12 aspect-square bg-secondary rounded-full mt-auto"></div>
                 </div>
                 <div className="flex flex-col justify-between">
                     <h1 className="text-2xs font-bold">Navigation</h1>

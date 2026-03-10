@@ -45,7 +45,6 @@ const slideRight = {
   }
 };
 
-
 const buttonAnim = {
   hidden: { y: 100, opacity: 0 },
   visible: {
@@ -61,15 +60,16 @@ export const About = () => {
       className="min-h-screen p-10"
       variants={container}
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
+      viewport={{once:true, amount: 0.4, margin: "150px"}}
     >
 
       <motion.h1
         className="text-3xl font-bold text-center mb-[3%]"
         variants={title}
       >
-        <span className="text-orange-400">Bon</span>
-        <span className="text-green-500">gissa</span> en bref
+        <span className="text-secondary">Bon</span>
+        <span className="text-primary">gissa</span> en bref
       </motion.h1>
 
       <div className="grid grid-cols-2 gap-8">
@@ -112,10 +112,10 @@ export const About = () => {
       </div>
 
       <motion.button
-        className="block mx-auto bg-green-400 px-5 py-2 rounded-3xl font-semibold mt-8 cursor-pointer"
+        className="block mx-auto bg-primary px-5 py-2 rounded-3xl font-semibold mt-8 cursor-pointer text-white"
         variants={buttonAnim}
         whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.9 }}
+        whileTap={{ scale: 0.95 }}
       >
         About Us
       </motion.button>

@@ -3,7 +3,7 @@ import type { SliderSingleProps } from "antd"
 
 export const ProgressBar = ({value }:{value: number}) => {
     const styles: SliderSingleProps['styles'] = {
-        track: { backgroundImage: 'linear-gradient(180deg, #FFB76B,#FF7B00)' },
+        track: { backgroundImage: 'linear-gradient(180deg, #f97316,#FF7B00)' },
         handle: {borderColor: '#FFB76B', boxShadow: '0 2px 8px #276221' },
 
     }

@@ -39,16 +39,16 @@ export const Projets = () => {
             variants={container}
             initial="hidden"
             whileInView="visible"
-            viewport={{once:true}}
+            viewport={{once:true, amount: 0.4,margin: "150px"}}
         >
             <motion.h1 
                 className="text-3xl font-bold" 
                 variants={titre}
             >
-                <span className="text-orange-500">Nos </span>
-                <span className="text-green-400">derniers</span><br/>
-                <span className="text-green-400">projets & </span>
-                <span className="text-orange-500">Annonces</span>
+                <span className="text-secondary">Nos </span>
+                <span className="text-primary">derniers</span><br/>
+                <span className="text-primary">projets & </span>
+                <span className="text-secondary">Annonces</span>
             </motion.h1>
             <div className="min-h-screen max-w-6xl flex justify-center gap-10 mx-auto mt-[5%]">
                 <motion.div variants={slideBottom}>
