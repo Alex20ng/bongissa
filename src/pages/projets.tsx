@@ -1,5 +1,8 @@
 import {motion} from "framer-motion";
 import { ProjectCard } from "../components/projectCard";
+import img1 from "../assets/image9.jpeg";
+import img2 from "../assets/image10.jpeg";
+import img3 from "../assets/image5.jpeg";
 
 const container = {
     hidden: {opacity: 0},
@@ -34,8 +37,10 @@ const slideBottom = {
 export const Projets = () => {
 
     return (
+        <div className="relative overflow-hidden bg-emerald-800">
+            <div className="absolute inset-0 bg-black/40"></div>
         <motion.div 
-            className="min-h-screen p-10"
+            className="relative z-10 min-h-screen p-10"
             variants={container}
             initial="hidden"
             whileInView="visible"
@@ -50,20 +55,20 @@ export const Projets = () => {
                 <span className="text-primary">projets & </span>
                 <span className="text-secondary">Annonces</span>
             </motion.h1>
-            <div className="min-h-screen max-w-6xl flex justify-center gap-10 mx-auto mt-[5%]">
+            <div className="min-h-screen flex gap-10 mt-[5%]">
                 <motion.div variants={slideBottom}>
-                    <ProjectCard titre="Alex Design"/>
+                    <ProjectCard titre="Corbeilles recyclees" src={img1}/>
                 </motion.div>
 
                <motion.div variants={slideBottom}>
-                    <ProjectCard titre="Alex Design"/>
+                    <ProjectCard titre="Alex Design" src={img3}/>
                 </motion.div>
 
                 <motion.div variants={slideBottom}>
-                    <ProjectCard titre="Alex Design"/>
+                    <ProjectCard titre="Alex Design" src={img3}/>
                 </motion.div>
-                
             </div>
         </motion.div>
+        </div>
     )
 }

@@ -2,12 +2,15 @@ import { Card } from "../components/card";
 import { CardLong } from "../components/cardLong";
 import { ProgressBar } from "../components/progressBar";
 import { motion } from "framer-motion";
+import img1 from "../assets/image3.jpeg";
+import img2 from "../assets/image4.jpeg";
+import img3 from "../assets/image2.jpeg"
 
 
 const container = {
-  hidden: { opacity: 0 },
+  hidden: { },
   visible: {
-    opacity: 1,
+   
     transition: {
       staggerChildren: 0.2,
       delayChildren: 0.4
@@ -56,8 +59,10 @@ const buttonAnim = {
 
 export const About = () => {
   return (
+    <div className="relative overflow-hidden  bg-emerald-800">
+      <div className="absolute inset-0 bg-black/40"></div>
     <motion.div
-      className="min-h-screen p-10"
+      className="relative z-10 min-h-screen p-10 -mt-5 text-white"
       variants={container}
       initial="hidden"
       whileInView="visible"
@@ -76,16 +81,16 @@ export const About = () => {
         <div className="ml-6">
           <div className="flex  mb-4">
             <motion.div variants={slideLeft}>
-              <Card />
+              <Card src={img1}/>
             </motion.div>
 
             <motion.div variants={slideLeft}>
-              <Card />
+              <Card src={img2}/>
             </motion.div>
           </div>
 
           <motion.div variants={slideLeft}>
-            <CardLong />
+            <CardLong src={img3}/>
           </motion.div>
 
         </div>
@@ -94,7 +99,7 @@ export const About = () => {
           className="ml-10 mr-auto"
           variants={slideRight}
         >
-          <p className="text-xs mb-10 leading-relaxed">
+          <p className="text-2xs mb-10 leading-relaxed">
             Une ONG (Organisation Non Gouvernementale) est une organisation qui
             travaille pour aider les populations et améliorer les conditions de vie
             dans la société. Elle intervient souvent dans des domaines comme la santé,
@@ -121,5 +126,6 @@ export const About = () => {
       </motion.button>
 
     </motion.div>
+    </div>
   );
 };

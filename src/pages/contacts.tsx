@@ -6,7 +6,7 @@ import instagram from "../assets/instagram.png";
 import tiktok from "../assets/tiktok.png";
 import whatsapp from "../assets/whatsapp.png";
 
-export const Contacts = () => {
+export const Contacts = ({toAbout, toProjet, toQuestion}: {toAbout:any, toProjet:any, toQuestion:any}) => {
 
     return (
         <div className="p-10">
@@ -56,11 +56,11 @@ export const Contacts = () => {
                         <img src={tiktok} alt="..." className="object-contain"/>
                     </div>
                 </div>
-                <div className="flex flex-col justify-between">
+                <div className="flex flex-col gap-2 mx-auto">
                     <h1 className="text-2xs font-bold">Navigation</h1>
-                    <a href="" className="text-2xs">A propos</a>
-                    <a href=""  className="text-2xs">Nos projets</a>
-                    <a href=""  className="text-2xs">FAQs</a>
+                    <button onClick={toAbout} className="text-2xs cursor-pointer">A propos</button>
+                    <button onClick={toProjet} className="text-2xs cursor-pointer">Nos projets</button>
+                    <button onClick={toQuestion} className="text-2xs cursor-pointer">FAQs</button>
                 </div>
                 <div className="flex flex-col justify-between h-30">
                     <h1 className="text-2xs font-bold">Contacts</h1>

@@ -1,9 +1,11 @@
 
 
-export const ProjectCard = ({titre}: {titre: string}) => {
+export const ProjectCard = ({titre, src}: {titre: string, src: string}) => {
     return (
         <div className=" bg-primary w-[90%] h-[70%] rounded-3xl p-5">
-            <div className="bg-secondary w-full h-1/2 rounded-3xl cursor-pointer"></div>
+            <div className="w-full h-1/2 rounded-3xl overflow-hidden">
+                <img src={src} className="w-full h-full object-cover"/>
+            </div>
             <h1 className="text-xl text-white font-semibold mt-3">{titre}</h1>
             <p className="text-xs text-white mt-6">
                 Une ONG (Organisation Non Gouvernementale) est une organisation qui
