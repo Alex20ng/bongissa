@@ -2,7 +2,7 @@ import phone from "../assets/phone.png";
 
 export const ServiceCard = () => {
     return (
-        <div className="w-[60%] h-[20%] p-6 bg-[#D9D9D9] rounded-2xl">
+        <div className="w-[80%] lg:w-[60%] h-[25%] lg:h-[20%] p-6 bg-[#D9D9D9] rounded-2xl">
             <div className="flex gap-8 items-center">
                 <div className="w-[13%] aspect-square">
                     <img src={phone} alt="..." className="object-contain"/>

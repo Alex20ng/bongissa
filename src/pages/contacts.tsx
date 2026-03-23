@@ -10,10 +10,10 @@ export const Contacts = ({toAbout, toProjet, toQuestion}: {toAbout:any, toProjet
 
     return (
         <div className="p-10">
-            <div className="w-14 aspect-square">
+            <div className="hidden lg:block w-14 aspect-square">
                 <img src={logo} alt="Logo" className="object-contain"/>
             </div>
-            <div className="flex mt-20 mb-15">
+            <div className="block lg:flex mt-20 mb-15">
                 <div className="flex flex-col gap-2">
                     <label htmlFor="email" className="font-semibold">News Lettter</label>
                     <div className="flex gap-2">
@@ -40,23 +40,39 @@ export const Contacts = ({toAbout, toProjet, toQuestion}: {toAbout:any, toProjet
                 Contactez Nous
             </motion.button>
             </div>
-            <div className="w-6xl h-0.5 bg-gray-400 mr-auto ml-auto"></div>
-            <div className="grid grid-cols-3 mt-15">
+            <div className="w-full lg:w-6xl h-0.5 bg-gray-400 mr-auto ml-auto"></div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 mt-15">
                 <div className="flex justify-start gap-4">
-                    <div className="w-10 aspect-square  rounded-full mt-auto cursor-pointer">
+                    <a 
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 aspect-square  rounded-full mt-auto cursor-pointer">
                         <img src={facebook} alt="..." className="object-contain"/>
-                    </div>
-                    <div className="w-10 aspect-square  rounded-full mt-auto cursor-pointer">
+                    </a>
+                    <a 
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 aspect-square  rounded-full mt-auto cursor-pointer">
                         <img src={instagram} alt="..." className="object-contain"/>
-                    </div>
-                    <div className="w-10 aspect-square  rounded-full mt-auto cursor-pointer">
+                    </a>
+                    <a 
+                        href="https://whatsapp.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 aspect-square  rounded-full mt-auto cursor-pointer">
                         <img src={whatsapp} alt="..." className="object-contain"/>
-                    </div>
-                    <div className="w-10 aspect-square  rounded-full mt-auto cursor-pointer">
+                    </a>
+                    <a 
+                        href="https://tiktok.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 aspect-square  rounded-full mt-auto cursor-pointer">
                         <img src={tiktok} alt="..." className="object-contain"/>
-                    </div>
+                    </a>
                 </div>
-                <div className="flex flex-col gap-2 mx-auto">
+                <div className="flex flex-col gap-2 mr-auto mb-[10%] mt-[10%] lg:mt-0 lg:mb-0 lg:mx-auto">
                     <h1 className="text-2xs font-bold">Navigation</h1>
                     <button onClick={toAbout} className="text-2xs cursor-pointer">A propos</button>
                     <button onClick={toProjet} className="text-2xs cursor-pointer">Nos projets</button>

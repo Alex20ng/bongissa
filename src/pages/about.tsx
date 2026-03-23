@@ -62,7 +62,7 @@ export const About = () => {
     <div className="relative overflow-hidden  bg-emerald-800">
       <div className="absolute inset-0 bg-black/40"></div>
     <motion.div
-      className="relative z-10 min-h-screen p-10 -mt-5 text-white"
+      className="relative z-10 min-h-screen p-10 lg:-mt-5 text-white"
       variants={container}
       initial="hidden"
       whileInView="visible"
@@ -70,17 +70,17 @@ export const About = () => {
     >
 
       <motion.h1
-        className="text-3xl font-bold text-center mb-[3%]"
+        className="text-3xl font-bold text-center mb-[10%] lg:mb-[3%]"
         variants={title}
       >
         <span className="text-secondary">Bon</span>
         <span className="text-primary">gissa</span> en bref
       </motion.h1>
 
-      <div className="grid grid-cols-2 gap-8">
-        <div className="ml-6">
-          <div className="flex  mb-4">
-            <motion.div variants={slideLeft}>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="lg:ml-6">
+          <div className="block lg:flex mb-4">
+            <motion.div variants={slideLeft} className="mb-[10%] lg:mb-0">
               <Card src={img1}/>
             </motion.div>
 
@@ -89,17 +89,21 @@ export const About = () => {
             </motion.div>
           </div>
 
-          <motion.div variants={slideLeft}>
+          <motion.div variants={slideLeft} className="hidden lg:block">
             <CardLong src={img3}/>
+          </motion.div>
+
+          <motion.div variants={slideLeft} className="block lg:hidden">
+            <Card src={img3}/>
           </motion.div>
 
         </div>
 
         <motion.div
-          className="ml-10 mr-auto"
+          className="mt-[3%] lg:mt-0 lg:ml-10"
           variants={slideRight}
         >
-          <p className="text-2xs mb-10 leading-relaxed">
+          <p className="text-justify text-2xs mb-10 leading-relaxed">
             Une ONG (Organisation Non Gouvernementale) est une organisation qui
             travaille pour aider les populations et améliorer les conditions de vie
             dans la société. Elle intervient souvent dans des domaines comme la santé,

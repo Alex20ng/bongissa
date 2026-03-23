@@ -55,12 +55,12 @@ export const Projets = () => {
                 <span className="text-primary">projets & </span>
                 <span className="text-secondary">Annonces</span>
             </motion.h1>
-            <div className="min-h-screen flex gap-10 mt-[5%]">
-                <motion.div variants={slideBottom}>
+            <div className="min-h-screen block mt-[15%] lg:flex gap-10 lg:mt-[5%]">
+                <motion.div variants={slideBottom} className="mb-[10%] lg:mb-0">
                     <ProjectCard titre="Corbeilles recyclees" src={img1}/>
                 </motion.div>
 
-               <motion.div variants={slideBottom}>
+               <motion.div variants={slideBottom} className="mb-[10%] lg:mb-0">
                     <ProjectCard titre="Alex Design" src={img3}/>
                 </motion.div>
 

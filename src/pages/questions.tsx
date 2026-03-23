@@ -58,7 +58,7 @@ export const Questions = () => {
             >
                 Questions ?
             </motion.h1>
-            <div className="grid grid-cols-2 mt-[3%] min-h-screen">
+            <div className="grid grid-cols-1 lg:grid-cols-2 mt-[20%] lg:mt-[3%] min-h-screen">
                 <div className="flex flex-col gap-5">
                     <motion.div variants={slideBottom} className="">
                         <QuestionCard question="Q'est ce qu'est l'ONG Bongissa ?" reponse="L'ONG Bongissa represente..."/>
@@ -73,7 +73,7 @@ export const Questions = () => {
                         <QuestionCard question="Q'est ce qu'est l'ONG Bongissa ?" reponse="L'ONG Bongissa represente..."/>
                     </motion.div>
                 </div>
-                <motion.div variants={slideRight} className="flex flex-col items-end gap-4">
+                <motion.div variants={slideRight} className="flex flex-col lg:items-end gap-4 mt-[5%] lg:mt-0">
                     <ContactCard/>
                     <ServiceCard/>
                 </motion.div>
