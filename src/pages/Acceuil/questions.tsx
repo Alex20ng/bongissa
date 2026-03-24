@@ -63,34 +63,34 @@ export const Questions = () => {
                     <motion.div variants={slideBottom} className="">
                         <QuestionCard 
                             question="Qui sommes nous ?" 
-                            reponse="Bongissa est une organisation non gouvernementale basee au Congo-Brazzaville,
-                            engagee dans la protecttion de l'environnement et la promotion du developpement durable.
-                            Nous agissons a travers des initiatives innovantes visant a reduire l'impact envionnemental, valoriser
-                            les ressources naturelles et ameliorer les conditions de vie des populations."
+                            reponse="Bongissa est une organisation non gouvernementale basée au Congo-Brazzaville,
+                            engagée dans la protection de l'environnement et la promotion du développement durable.
+                            Nous agissons à travers des initiatives innovantes visant à reduire l'impact envionnemental, valoriser
+                            les ressources naturelles et améliorer les conditions de vie des populations."
                         />
                     </motion.div>
                     <motion.div variants={slideBottom} className="">
                         <QuestionCard 
                             question="Qu'elle est notre vision ?" 
-                            reponse="Notre vision est de devenir une reference en matiere de conservation de l'environnement
-                            et de developpement durable en Republique du Congo. Nous aspirons a impulser un changement durable
-                            des comportements des populations et des acteurs economiques en faveur d'un environnement sain."
+                            reponse="Notre vision est de devenir une référence en matière de conservation de l'environnement
+                            et de développement durable en République du Congo. Nous aspirons à impulser un changement durable
+                            des comportements des populations et des acteurs économiques en faveur d'un environnement sain."
                         />
                     </motion.div>
                     <motion.div variants={slideBottom} className="">
                         <QuestionCard 
                             question="Quelles sont les missions de Bongissa ?" 
-                            reponse="Bongissa a pour mission de proteger l'environnement et de promouvoir le developpement durable a
-                            travers des actions concretes de sensibilisation, d'innovation ecologique et de gestion responsable
-                            des ressources naturelles, afin d'ameliorer les conditions de vie des populations."
+                            reponse="Bongissa a pour mission de protéger l'environnement et de promouvoir le développement durable à
+                            travers des actions concrètes de sensibilisation, d'innovation écologique et de gestion responsable
+                            des ressources naturelles, afin d'améliorer les conditions de vie des populations."
                         />
                     </motion.div>
                     <motion.div variants={slideBottom} className="">
                         <QuestionCard 
                             question="Quels sont les domaines d'intervension de Bongissa ?" 
-                            reponse="Bongissa intervient dans plusieurs domaines cles, notamment la valorisation
-                            des dechets, la construction ecologique, les energies renouvelables, l'ecotourisme ainsi que 
-                            l'agriculture et l'elevage durables."
+                            reponse="Bongissa intervient dans plusieurs domaines clés, notamment la valorisation
+                            des déchets, la construction écologique, les energies renouvelables, l'écotourisme ainsi que 
+                            l'agriculture et l'élevage durables."
                         />
                     </motion.div>
                 </div>

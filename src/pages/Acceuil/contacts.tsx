@@ -82,7 +82,7 @@ export const Contacts = ({toAbout, toProjet, toQuestion}: {toAbout:any, toProjet
                     <h1 className="text-2xs font-bold">Contacts</h1>
                     <p className="text-2xs">(+242) 06 971 16 67</p>
                     <p className="text-2xs">bongissa242officiel1@gmail.com</p>
-                    <p className="text-2xs">14 rue du marche, Talangai</p>
+                    <p className="text-2xs">14 rue du marché, Talangai</p>
                 </div>
             </div>
         </div>

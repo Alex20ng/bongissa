@@ -179,7 +179,7 @@ export const Home = ({toHome, toAbout, toProjet, toQuestion, toContact}: {toHome
                 </motion.header>
                 <motion.div variants={slideLeft} className="mt-[20%] lg:mt-[10%]">
                     <h1 className="text-2xl lg:text-6xl text-white font-bold font-serif">
-                        La creativite au service<br/>
+                        La créativité au service<br/>
                         de l'environnement.
                     </h1>
                 </motion.div>

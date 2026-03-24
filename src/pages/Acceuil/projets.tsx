@@ -58,32 +58,32 @@ export const Projets = () => {
             <div className="min-h-screen block mt-[15%] lg:flex gap-10 lg:mt-[5%]">
                 <motion.div variants={slideBottom} className="mb-[10%] lg:mb-0">
                     <ProjectCard 
-                        titre="Corbeilles en bouchons reutilises" 
+                        titre="Corbeilles en bouchons réutilisés" 
                         src={img1}
-                        description="Bongissa met en place des corbeilles fabriquees a partir des bouchons
-                        plastiques reutilises dans une demarche de valorisation des dechets.
-                        Cette initialise contribue a la reduction de la pollution, a la promotion
-                        du recyclage et du developpement durable en Republique du Congo."
+                        description="Bongissa met en place des corbeilles fabriquées à partir des bouchons
+                        plastiques réutilisés dans une démarche de valorisation des déchets.
+                        Cette initiative contribue à la réduction de la pollution, à la promotion
+                        du recyclage et du dévéloppement durable en Republique du Congo."
                     />
                 </motion.div>
 
                <motion.div variants={slideBottom} className="mb-[10%] lg:mb-0">
                     <ProjectCard 
-                        titre="Un campus plus vert grace a Bongissa" 
+                        titre="Un campus plus vert grâce à Bongissa" 
                         src={img2}
-                        description=" Bongissa encourage et mobilise les jeunes a mener une operation de planting visant a verdir
+                        description="Bongissa encourage et mobilise les jeunes à mener une opération de planting visant à verdir
                         et embellir le campus de l'Universite Denis Sassou-N'GUESSO.
-                        Cette initiative contribue egalement a la lutte contre le changement climatique
-                        et a la promotion d'un environnement durable."
+                        Cette initiative contribue également à la lutte contre le changement climatique
+                        et à la promotion d'un environnement durable."
                     />
                 </motion.div>
 
                 <motion.div variants={slideBottom}>
                     <ProjectCard 
-                        titre="Bongissa convie aux 5 ans de l'UDSN" 
+                        titre="Bongissa convié aux 5 ans de l'UDSN" 
                         src={img3}
-                        description="Bongissa a pris part a une conference organise par l'Universite Denis Sassou-
-                        N'GUESSO a l'occasion de son 5eme anniversaire, affirmant ainsi son engagement a contribuer
+                        description="Bongissa a pris part à une conférence organisée par l'Université Denis Sassou-
+                        N'GUESSO à l'occasion de son 5ème anniversaire, affirmant ainsi son engagement à contribuer
                         activement aux reflexions et aux dialogues autour des enjeux environnementaux."
                     />
                 </motion.div>

@@ -8,7 +8,7 @@ export const QuestionCard = ({question,reponse}: {question: string, reponse: str
 
 
     return (
-        <motion.div layout className="w-[90%] bg-[#D9D9D9] rounded-2xl">
+        <motion.div layout className="w-full bg-[#D9D9D9] rounded-2xl">
             <div className="flex justify-between px-6 py-5 items-center font-semibold">
                 {question}
                 <button onClick={() => setIsOpen(!isOpen)} className="cursor-pointer">
