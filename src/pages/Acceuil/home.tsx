@@ -1,7 +1,7 @@
 import {motion, useSpring, AnimatePresence} from "framer-motion";
-import { TextCarousel } from "../components/textCarousel";
-import logo from "../assets/logo.png";
-import background from "../assets/img.png";
+import { TextCarousel } from "../../components/textCarousel";
+import logo from "../../assets/logo.png";
+import background from "../../assets/img.png";
 import { useTransform, useScroll } from "framer-motion";
 import { MenuIcon, XIcon } from "lucide-react";
 import { useState, useEffect } from "react";

@@ -1,10 +1,10 @@
 import {motion} from "framer-motion";
-import logo from "../assets/logo.png";
-import send from "../assets/send.png";
-import facebook from "../assets/facebook.png";
-import instagram from "../assets/instagram.png";
-import tiktok from "../assets/tiktok.png";
-import whatsapp from "../assets/whatsapp.png";
+import logo from "../../assets/logo.png";
+import send from "../../assets/send.png";
+import facebook from "../../assets/facebook.png";
+import instagram from "../../assets/instagram.png";
+import tiktok from "../../assets/tiktok.png";
+import whatsapp from "../../assets/whatsapp.png";
 
 export const Contacts = ({toAbout, toProjet, toQuestion}: {toAbout:any, toProjet:any, toQuestion:any}) => {
 
@@ -44,14 +44,14 @@ export const Contacts = ({toAbout, toProjet, toQuestion}: {toAbout:any, toProjet
             <div className="grid grid-cols-1 lg:grid-cols-3 mt-15">
                 <div className="flex justify-start gap-4">
                     <a 
-                        href="https://facebook.com"
+                        href="https://facebook.com/share/1HWhnLBDJT/?mibextid=wwXIfr"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-10 aspect-square  rounded-full mt-auto cursor-pointer">
                         <img src={facebook} alt="..." className="object-contain"/>
                     </a>
                     <a 
-                        href="https://instagram.com"
+                        href="https://instagram.com/bongissa_officiel?igsh=MXBIdXc3Ym9iY29IcQ%3D%3D&utm_source=qr"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-10 aspect-square  rounded-full mt-auto cursor-pointer">
@@ -65,7 +65,7 @@ export const Contacts = ({toAbout, toProjet, toQuestion}: {toAbout:any, toProjet
                         <img src={whatsapp} alt="..." className="object-contain"/>
                     </a>
                     <a 
-                        href="https://tiktok.com"
+                        href="https://www.tiktok.com/@bongissa_officile1"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-10 aspect-square  rounded-full mt-auto cursor-pointer">

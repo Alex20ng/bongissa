@@ -1,8 +1,8 @@
 import {motion} from "framer-motion";
-import { ProjectCard } from "../components/projectCard";
-import img1 from "../assets/image9.jpeg";
-import img2 from "../assets/image10.jpeg";
-import img3 from "../assets/image5.jpeg";
+import { ProjectCard } from "../../components/projectCard";
+import img1 from "../../assets/image9.jpeg";
+import img2 from "../../assets/image10.jpeg";
+import img3 from "../../assets/image5.jpeg";
 
 const container = {
     hidden: {opacity: 0},
@@ -58,7 +58,7 @@ export const Projets = () => {
             <div className="min-h-screen block mt-[15%] lg:flex gap-10 lg:mt-[5%]">
                 <motion.div variants={slideBottom} className="mb-[10%] lg:mb-0">
                     <ProjectCard 
-                        titre="Corbeilles en bouchon reutilises" 
+                        titre="Corbeilles en bouchons reutilises" 
                         src={img1}
                         description="Bongissa met en place des corbeilles fabriquees a partir des bouchons
                         plastiques reutilises dans une demarche de valorisation des dechets.

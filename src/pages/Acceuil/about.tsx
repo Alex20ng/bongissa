@@ -1,12 +1,12 @@
-import { Card } from "../components/card";
-import { CardLong } from "../components/cardLong";
-import { ProgressBar } from "../components/progressBar";
+import { Card } from "../../components/card";
+import { CardLong } from "../../components/cardLong";
+import { ProgressBar } from "../../components/progressBar";
 import { motion } from "framer-motion";
-import img1 from "../assets/image3.jpeg";
-import img2 from "../assets/image4.jpeg";
-import img3 from "../assets/image2.jpeg"
-import img4 from "../assets/img2.jpeg";
-import { Card1 } from "../components/card1";
+import img1 from "../../assets/image3.jpeg";
+import img2 from "../../assets/image4.jpeg";
+import img3 from "../../assets/image2.jpeg"
+import img4 from "../../assets/img2.jpeg";
+import { Card1 } from "../../components/card1";
 
 const container = {
   hidden: { },
