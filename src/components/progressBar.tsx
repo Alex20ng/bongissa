@@ -1,7 +1,7 @@
 import { Slider } from "antd"
 import type { SliderSingleProps } from "antd"
 
-export const ProgressBar = ({value }:{value: number}) => {
+export const ProgressBar = ({value,title }:{value: number,title: string}) => {
     const styles: SliderSingleProps['styles'] = {
         track: { backgroundImage: 'linear-gradient(180deg, #f97316,#FF7B00)' },
         handle: {borderColor: '#FFB76B', boxShadow: '0 2px 8px #276221' },
@@ -11,7 +11,7 @@ export const ProgressBar = ({value }:{value: number}) => {
     return (
         <div className="mb-10">
             <h1 className="text-2xs font-bold">
-                Creation et innovation
+                {title}
             </h1>
             <Slider 
                 value={value} 

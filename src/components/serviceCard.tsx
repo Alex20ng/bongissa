@@ -9,7 +9,7 @@ export const ServiceCard = () => {
                 </div>
                 <h1 className="text-xl font-semibold">24/7 Service</h1>
             </div>
-            <p className="text-2xs text-center">+242 06 767 66 43</p>
+            <p className="text-2xs text-center">+242 06 971 16 67</p>
         </div>
     )
 }

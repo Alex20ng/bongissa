@@ -115,12 +115,17 @@ export const Home = ({toHome, toAbout, toProjet, toQuestion, toContact}: {toHome
                 whileInView="visible"
                 viewport={{once: true, margin: "150px"}}
             >
-                <button 
-                    onClick={() => setOnClick(!onClick)} 
-                    className="block lg:hidden ml-auto cursor-pointer relative z-50"
-                >
-                    {onClick ? <XIcon color="white"/> :<MenuIcon color="white"/>}
-                </button>
+                <div className="flex">
+                    <div className="block lg:hidden w-14 aspect-square">
+                        <img src={logo} alt="Logo" className="object-contain"/>
+                    </div>
+                    <button 
+                        onClick={() => setOnClick(!onClick)} 
+                        className="block lg:hidden ml-auto cursor-pointer relative z-50"
+                    >
+                        {onClick ? <XIcon color="white"/> :<MenuIcon color="white"/>}
+                    </button>
+                </div>
                 <AnimatePresence>
                     {onClick && (
                         <motion.div
@@ -173,9 +178,9 @@ export const Home = ({toHome, toAbout, toProjet, toQuestion, toContact}: {toHome
                     </div>
                 </motion.header>
                 <motion.div variants={slideLeft} className="mt-[20%] lg:mt-[10%]">
-                    <h1 className="text-4xl lg:text-6xl text-white font-bold font-serif">
-                        Chaque dechet<br/>
-                        est revalorise.
+                    <h1 className="text-2xl lg:text-6xl text-white font-bold font-serif">
+                        La creativite au service<br/>
+                        de l'environnement.
                     </h1>
                 </motion.div>
                 <motion.div variants={slideRight} className="mt-[99%] lg:mt-0 lg:w-xs ml-auto">

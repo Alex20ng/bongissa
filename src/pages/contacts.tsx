@@ -80,9 +80,9 @@ export const Contacts = ({toAbout, toProjet, toQuestion}: {toAbout:any, toProjet
                 </div>
                 <div className="flex flex-col justify-between h-30">
                     <h1 className="text-2xs font-bold">Contacts</h1>
-                    <p className="text-2xs">(+242) 06 767 66 43</p>
-                    <p className="text-2xs">bongissa@exemple.com</p>
-                    <p className="text-2xs">7 rue eby, Massengo</p>
+                    <p className="text-2xs">(+242) 06 971 16 67</p>
+                    <p className="text-2xs">bongissa242officiel1@gmail.com</p>
+                    <p className="text-2xs">14 rue du marche, Talangai</p>
                 </div>
             </div>
         </div>

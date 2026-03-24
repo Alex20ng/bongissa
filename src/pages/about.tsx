@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import img1 from "../assets/image3.jpeg";
 import img2 from "../assets/image4.jpeg";
 import img3 from "../assets/image2.jpeg"
-
+import img4 from "../assets/img2.jpeg";
+import { Card1 } from "../components/card1";
 
 const container = {
   hidden: { },
@@ -94,7 +95,7 @@ export const About = () => {
           </motion.div>
 
           <motion.div variants={slideLeft} className="block lg:hidden">
-            <Card src={img3}/>
+            <Card1 src={img4}/>
           </motion.div>
 
         </div>
@@ -104,18 +105,19 @@ export const About = () => {
           variants={slideRight}
         >
           <p className="text-justify text-2xs mb-10 leading-relaxed">
-            Une ONG (Organisation Non Gouvernementale) est une organisation qui
-            travaille pour aider les populations et améliorer les conditions de vie
-            dans la société. Elle intervient souvent dans des domaines comme la santé,
-            l’éducation, la protection de l’environnement ou l’aide humanitaire.
-            Les ONG agissent sans but lucratif et cherchent surtout à soutenir les
-            personnes dans le besoin. Grâce à leurs actions, elles contribuent au
-            développement des communautés et à la solidarité entre les peuples.
+            L’ONG Bongissa, basée au Congo-Brazzaville, œuvre pour la protection de 
+            l’environnement et le développement durable. Elle agit face aux défis tels 
+            que la pollution, la déforestation et le changement climatique. Ses interventions
+            couvrent la valorisation des déchets, les énergies renouvelables, la construction 
+            écologique, l’écotourisme et l’agriculture durable. Alignée sur le Plan National de
+            Développement 2022-2026, elle vise à réduire l’impact environnemental tout en 
+            améliorant les conditions de vie. Elle s’appuie sur la sensibilisation, l’innovation
+            et une gestion responsable des ressources.
           </p>
 
-          <ProgressBar value={80}/>
-          <ProgressBar value={30}/>
-          <ProgressBar value={90}/>
+          <ProgressBar value={80} title="Solution durable et Innovation"/>
+          <ProgressBar value={60} title="Sensibiisation et education enrvironnementale"/>
+          <ProgressBar value={90} title="Gestion et valorisation des dechets"/>
         </motion.div>
 
       </div>
